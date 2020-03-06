@@ -1,0 +1,27 @@
+{
+  "name": "pushthat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "pushthatapi.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cron": "^1.8.2",
+    "express": "^4.17.1",
+    "fcm-node": "^1.5.2",
+    "formidable": "^1.2.1",
+    "fs": "0.0.1-security",
+    "generate-sms-verification-code": "^1.0.5",
+    "jsonwebtoken": "^8.5.1",
+    "multer": "^1.4.2",
+    "mysql": "^2.18.0",
+    "nodemailer": "^6.4.2",
+    "randomstring": "^1.1.5",
+    "stream": "0.0.2",
+    "util": "^0.12.1"
+  }
+}
