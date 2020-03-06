@@ -12,7 +12,7 @@ const secret = 'pushnotificationservices';
 let jwt = require('jsonwebtoken');  
 var CronJob = require('cron').CronJob;
 var FCM = require('fcm-node');
-var serverKey = "AAAAzGPGuxY:APA91bHOeev4VivmW0qrrEim6N_pQhehSF5D4lwaF3ZtTvEY7IFT537oVWxL8YOL7BJKdkCJRZBlB1C--QWkjtUMgqEzncpTgz3WhD4Wpd1uns36_7Tli0V34G1S38FKuuz9I4_8s0jO"; //put your server key here
+var serverKey = ""; //put your server key here
 var fcm = new FCM(serverKey);
 var fs = require('fs');
 var stream = require('stream');
@@ -961,12 +961,12 @@ function sendEmailCode(email, code) {
             port: 465,
             secure: true,  //true for 465 port, false for other ports
             auth: {
-                user: 'amcotestmail@gmail.com',
-                pass: 'amcotestamco'
+                user: 'email',
+                pass: 'password'
             }
         });
         const mailOptions = {
-            from: '"Push over" <amcotestmail@gmail.com>', // sender address
+            from: '"Push over" <sender_email>', // sender address
             to: email, // list of receivers
             subject: 'Push over Verification Code', // Subject line
             text: 'code: ' + code, // plain text body
